@@ -1,22 +1,22 @@
-## ᚲᛟᛒᛟ
+## ᛊᛟᛅy ᚱᛖᚫᛞᛖᚱ
 
-Kobo にファイルを転送し、ついでに本棚を自動生成します。
+reader-t2 にファイルを転送し、ついでに本棚を自動生成します。
 
 
 ## 使いかた
 
 以下のように引数を4つ与えます。
 
-     kobo-auto-shelf.rb \
-       /mnt/kobo/body \
-       /mnt/kobo/sd \
-       /media/data/device/kobo/body \
-       /media/data/device/kobo/sd
+     reader-t2-auto-shelf.rb \
+       /mnt/reader-t2/body \
+       /mnt/reader-t2/sd \
+       /media/data/device/reader-t2/body \
+       /media/data/device/reader-t2/sd
 
 各引数の意味は下の通りです
 
-1. Kobo の本体ストレージのパス
-2. Kobo のSDストレージのパス
+1. reader-t2 の本体ストレージのパス
+2. reader-t2 のSDストレージのパス
 3. 本体へ転送したいファイルのあるディレクトリ
 4. SD へ転送したいファイルのあるディレクトリ
 
@@ -30,7 +30,7 @@ Kobo にファイルを転送し、ついでに本棚を自動生成します。
 <本棚名>/ファイル のように一つだけディレクトリを作ってそこへ入れます。
 
 
-    /media/data/device/kobo/sd
+    /media/data/device/reader-t2/sd
       ├── vimpr
       │   ├── [anekos] Happy Hacking Vimperator.epub
       │   └── [anekos616] 獄門 Vimperator.epub
@@ -47,7 +47,7 @@ Kobo にファイルを転送し、ついでに本棚を自動生成します。
 ## 備考
 
 転送されるファイルのファイル名に日本語などが使われる場合は、
-(Koboの仕様っぽい)不具合の回避のために Base64 っぽいリネームが行なわれます。
+Base64 っぽいリネームが行なわれます。
 もちろん、転送元のファイルはリネームされません。
 
 ## Requirements
