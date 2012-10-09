@@ -129,7 +129,7 @@ class Project
     if book
       id = book['_id']
       @db.execute(
-        'update books' +
+        'update books ' +
         'set modified_date = ? ' +
         'where _id = ?',
         date, id
